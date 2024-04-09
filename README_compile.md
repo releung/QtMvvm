@@ -71,3 +71,15 @@ rg 'TEMPLATE = app' ./examples
 
 ```
 
+
+
+# 注意
+
+> 因为 `https://github.com/Skycoder42/QtDataSync/blob/master/src/messages/messages.pro` 中依赖 `Skycoder42/CryptoQQ@2.0.3`,
+>
+> 而当前没有 `github.com/Skycoder42/CryptoQQ` 仓库了, 导致 `QtDataSync` 无法编译, 
+>
+> 从而导致 `src/mvvmdatasynccore/` 无法编译 , `src/mvvmdatasyncquick/ src/mvvmdatasyncwidgets/` 依赖 `mvvmdatasynccore` 同样会无法编译，
+>
+>  最后 examples 中的 `mvvmdatasynccore  mvvmdatasyncquick  mvvmdatasyncwidgets` 都无法编译.
+
